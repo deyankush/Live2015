@@ -1,0 +1,17 @@
+{
+  "name": "Market Road",
+  "version": "0.1",
+  "description": "The front end for market road website.",
+  "main": "app/index.html",
+  "keywords": [
+    "marketroad"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
