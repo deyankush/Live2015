@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="mainApp">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
+<title>Mall Wall</title>
 
+<script type="text/javascript" src="./lib/angular/angular.min.js"></script>
+<script type="text/javascript" src="./lib/jquery-1.10.2.min/index.js"></script>
+<script type="text/javascript" src="./lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+<script type="text/javascript" src="./javaScripts/app.js"></script>
+<script type="text/javascript" src="./javaScripts/mainCtrl.js"></script>
+
+<link type="text/css" href="./lib/bootstrap/dist/css/bootstrap.min.css"></link>
+
+</head>
+<body ng-controller="mainCtrl">
+	<span ng-bind="userFirstName"></span>
 </body>
 </html>
