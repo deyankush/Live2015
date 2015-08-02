@@ -15,6 +15,9 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "1.4.3"
+    "angular": "1.4.3",
+    "jquery-1.10.2.min": "http://code.jquery.com/jquery-1.10.2.min.js",
+    "bootstrap": "3.0.3",
+    "angular-ui-router": "0.2.14"
   }
 }
