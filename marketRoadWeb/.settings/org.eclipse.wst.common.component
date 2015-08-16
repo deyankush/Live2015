@@ -3,6 +3,6 @@
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <property name="java-output-path" value="/marketRoadWeb/build/classes"/>
-        <property name="context-root" value="marketRoad"/>
+        <property name="context-root" value="marketRoadWeb"/>
     </wb-module>
 </project-modules>

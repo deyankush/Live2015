@@ -1,0 +1,47 @@
+<section id="form"><!--form-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-1">
+					<div class="login-form"><!--login form-->
+						<h2>Login to your account</h2>
+						<form>
+							<input type="text" ng-model="email" placeholder="Email Address" required/>
+							<input type="password" ng-model="password" placeholder="Password" required/>
+							<span>
+								<A href="#" class="fwdPwd">Forgot Password</A>
+							</span>
+							{{loginDetails}}
+							<button ng-click="checkLogin()" class="btn btn-default">Login</button>
+						</form>
+					</div><!--/login form-->
+				</div>
+				<div class="col-sm-2">
+					<h2 class="or" style="margin-left: 50px;">OR</h2>
+				</div>
+				<div class="col-sm-4">
+					<div class="signup-form"><!--sign up form-->
+						<h2>New User Signup!</h2>
+						<form action="#">
+							<!--<input type="text" placeholder="Name" required/>-->
+							<input type="email" placeholder="Email Address" required/>
+							<input type="tel" placeholder="Enter Mobile Number" required/>
+							<input type="password" placeholder="Password" required/>
+							<input type="password" placeholder="Confirm Password" required/>
+							<button type="submit" class="btn btn-default">Signup</button>
+						</form>
+					</div><!--/sign up form-->
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+		$( document ).ready(function() {
+			$('#form input').blur(function() {
+			  $(this).addClass('error');
+			});
+			$('#form input').focus(function() {
+			  $(this).removeClass('error');
+			});
+		});
+		
+	</script>
