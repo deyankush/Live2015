@@ -2716,9 +2716,78 @@ ul.navbar-nav li:hover ul{
 .margT50Forse{
 	margin-top: 50px !important;
 }
+.margTB20Forse{
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+}
+.paddR20{
+	padding-right:20px;
+}
 .floatL{
 	float:left;
 }
 .floatR{
 	float:right;
+}
+/*============ MyTab=======================*/
+#header{
+	z-index: 1;
+	position: relative;
+}
+section{
+	z-index: 0;
+	position: relative;
+}
+.minH450{
+	min-height: 450px;
+}
+h1 {
+  color: #696763;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.myTabs{}
+.myTabs .nav-tabs > li {
+	width:100%;
+}
+.myTabs .nav-tabs li a {
+    border-radius: 0;
+	background:#eee;
+}
+.myTabs .nav-tabs li{
+	padding-right: 20px;
+	position: relative;
+}
+.myTabs .nav-tabs li a:hover, .myTabs .nav-tabs li a:focus {
+	background:#428bca;
+	color:#fff;
+	border-color:#428bca;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #fff;
+}
+.myTabs .nav-tabs li.active a {
+	background:#428bca;
+	color:#fff;
+	border-color:#428bca;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #fff;
+}
+.myTabs .nav-tabs li.active .arrow{
+	position:absolute;
+	top:1px;
+	right:0;
+	width:0;
+	height:0;
+    border-top:29px solid transparent;
+    border-bottom:29px solid transparent;
+    border-left:20px solid #428bca;
+}
+.myTabs .nav > li > a {
+    padding: 20px 15px;
+}
+.myTabs .nav-tabs {
+    border-bottom: 0;
 }
