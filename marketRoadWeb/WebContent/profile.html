@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | E-Shopper</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<header id="header"><!--header-->
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="index.html" class="logoTxt"><span>RASHAN</span>-KART</a>
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
+								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+								<!-- <li><a href="register.html" class="active"><i class="fa fa-sign-in"></i> Sign up / Login</a></li> -->
+								<!-- <li><a href="#" id="loginPopUp"><i class="fa fa-lock"></i> Login</a></li>  -->
+								<li><a href="#"><i class="fa fa-user"></i> Account</a>
+									<ul>
+										<li><a href="profile.html">Account Setting</a></li>
+										<li><a href="#">Order History</a></li>
+										<li><a href="#">Privacy options</a></li>
+										<li><a href="#">Log Out</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	</header><!--/header-->
+	<section id="form" class="margTB20Forse"><!--form-->
+		<div class="container minH450">
+			<div class="row">
+				<form>
+					<div class="col-sm-4 myTabs">
+						<h1>Profile Info</h1>
+						<ul class="nav nav-tabs">
+							<li class="active"><a data-toggle="tab" href="#home">Personal Information</a><span class="arrow"></span></li>
+							<li><a data-toggle="tab" href="#menu1">Billing Information</a><span class="arrow"></span></li>
+							<li><a data-toggle="tab" href="#menu2">Security Setting</a><span class="arrow"></span></li>
+							<li><a data-toggle="tab" href="#menu3">Other Information</a><span class="arrow"></span></li>
+						</ul>
+					</div>
+					<div class="col-sm-8">
+						<div class="tab-content">
+							<div id="home" class="tab-pane fade in active">
+							  	<div class="col-sm-12">
+									<div class="login-form"><!--login form-->
+										<h2>Personal Information!</h2>
+										<input type="text" placeholder="First Name *" required/>
+										<input type="text" placeholder="Last Name *" required/>
+										<input type="text" placeholder="Title"/>
+										<input type="text" placeholder="Email*" required/>		
+										<input type="text" placeholder="Phone Number *" required/>
+										<input type="text" placeholder="DOB"/>						
+									</div><!--/login form-->
+									<div class="clear"></div>
+									<button type="submit" class="mybutton btn-default floatL">Save</button>
+									<button type="submit" class="mybutton btn-default floatR">Cancel</button>
+									<div class="clear"></div>
+								</div>
+							</div>
+							<div id="menu1" class="tab-pane fade">
+							 	<div class="col-sm-12">
+									<div class="signup-form"><!--sign up form-->
+										<h2>Billing Information!</h2>
+										<input type="text" placeholder="Address 1 *" required/>
+										<input type="text" placeholder="Address 2"/>
+										<input type="text" placeholder="Address 3"/>
+										<input type="text" placeholder="Zip / Postal Code *" required/>
+										<select>
+											<option>-- Country --</option>
+											<option>United States</option>
+											<option>Bangladesh</option>
+											<option>UK</option>
+											<option>India</option>
+											<option>Pakistan</option>
+											<option>Ucrane</option>
+											<option>Canada</option>
+											<option>Dubai</option>
+										</select>
+										<select>
+											<option>-- State / Province / Region --</option>
+											<option>United States</option>
+											<option>Bangladesh</option>
+											<option>UK</option>
+											<option>India</option>
+											<option>Pakistan</option>
+											<option>Ucrane</option>
+											<option>Canada</option>
+											<option>Dubai</option>
+										</select>			
+									</div><!--/sign up form-->
+									<div class="clear"></div>
+									<button type="submit" class="mybutton btn-default floatL">Save</button>
+									<button type="submit" class="mybutton btn-default floatR">Cancel</button>
+									<div class="clear"></div>
+								</div>
+							</div>
+							<div id="menu2" class="tab-pane fade">
+							 	 <div class="col-sm-12">
+									<div class="login-form"><!--login form-->
+										<h2>Security Setting!</h2>			
+										<input type="text" placeholder="Email*" required/>		
+										<input type="password" placeholder="Old password *" required/>
+										<input type="password" placeholder="New password *" required/>
+										<input type="password" placeholder="Confirm password *" required/>						
+									</div><!--/login form-->
+									<div class="clear"></div>
+									<button type="submit" class="mybutton btn-default floatL">Save</button>
+									<button type="submit" class="mybutton btn-default floatR">Cancel</button>
+									<div class="clear"></div>
+								</div>
+							</div>
+							<div id="menu3" class="tab-pane fade">
+							  <div class="col-sm-12">
+									<div class="login-form"><!--login form-->
+										<h2>Other Information!</h2>			
+										<p>Coming soon...</p>				
+									</div><!--/login form-->
+								</div>
+							</div>
+						 </div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section><!--/form-->
+	<footer id="footer"><!--Footer-->
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2015 RASHAN KART. All rights reserved. <a href="#">vendor Login</a> | <a href="#">Admin Login</a> | <a href="#">Sitemap</a></p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="#">MyWeb</a></span></p>
+				</div>
+			</div>
+		</div>
+	</footer><!--/Footer-->
+	
+
+  
+    <script src="javaScripts/jquery.js"></script>
+	<script src="javaScripts/bootstrap.min.js"></script>
+    <script src="javaScripts/main.js"></script>
+	<script>
+		$( document ).ready(function() {
+			$('#form input').blur(function() {
+			  $(this).addClass('error');
+			});
+			$('#form input').focus(function() {
+			  $(this).removeClass('error');
+			});
+		});
+		
+	</script>
+</body>
+</html>

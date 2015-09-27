@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | MARKET-ROAD</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body ng-app="com.marketRoad" ng-controller="mainCtrl">
+<!-- <div id="PickCity" class="popup">	
+	<table width="100%" height="100%">
+		<tr>
+			<td align="center">
+				<div class="selectLocality">
+					<input list="browsers" name="browser" class="search">
+					<datalist id="browsers">
+						<option value="Internet Explorer">
+						<option value="Firefox">
+						<option value="Chrome">
+						<option value="Opera">
+						<option value="Safari">
+					</datalist>
+					<input type="submit" id="searchSubmit" value="Select Location">
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="selectLocality">
+		<input type="search" placeholder="locality" />
+	</div>
+</div> -->
+<!-- <div id="LoginCust" class="popup">	
+	<table width="100%" height="100%">
+		<tr>
+			<td align="center">
+				<div class="loginDetails">
+					<ul>
+						<li><h2>Sign In <br /><hr /></h2></li>
+						<li><input type="text" placeholder="Enter user id" name="" id="userId"/></li>
+						<li><input type="password" placeholder="Enter password" name=""  id="pwd"/></li>
+						<li class="textLeft"><a href="#" class="fpwdLink">Forgot Password ?</a><input type="submit" value="login" name="" id="loginSubmit"/></li>
+					</ul>
+					<a href="#" id="loginPopUpClose">X</a>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div> -->
+	<header id="header"><!--header-->
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="#/home" class="logoTxt"><span>MARKET</span>-ROAD</a>
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<!-- <li><a href="#"><i class="fa fa-user"></i> Account</a></li> -->
+								<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
+								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+								<li><a href="#/login"><i class="fa fa-sign-in"></i> Sign up / Login</a></li>
+								<!-- <li><a href="#" id="loginPopUp"><i class="fa fa-lock"></i> Login</a></li>  -->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li ng-repeat="category in categoryDetails" class="dropdown"><a href="index.html">{{category.categoryName}}</a>
+									<ul role="menu" ng-if="category.subcategory">
+                                        <li ng-repeat="subCat in category.subcategory"><a href="shop.html">{{subCat.name}}</a></li>
+		
+                                    </ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="search_box pull-right">
+							<input type="text" placeholder="Search"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
+	<div ui-view></div>
+	<footer id="footer"><!--Footer-->
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2015 RASHAN KART. All rights reserved. <a href="#">vendor Login</a> | <a href="#">Admin Login</a> | <a href="#">Sitemap</a></p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="#">MyWeb</a></span></p>
+				</div>
+			</div>
+		</div>
+	</footer><!--/Footer-->
+	
+	<script src="lib/angular.js"></script>
+	<script src="lib/angular-ui-router.js"></script>
+	<script src="lib/angular-resource.js"></script>
+    <script src="javaScripts/jquery.js"></script>
+	<script src="javaScripts/bootstrap.min.js"></script>
+    <!-- <script src="javaScripts/main.js"></script> -->
+    <script src="javaScripts/app.js"></script>
+    <script src="javaScripts/mainCtrl.js"></script>
+    <script src="javaScripts/home/homeCtrl.js"></script>
+    <script src="javaScripts/home/homeService.js"></script>
+    <script src="javaScripts/login/loginCtrl.js"></script>
+    <script src="javaScripts/login/loginService.js"></script>
+	<script>
+		$( document ).ready(function() {
+			//$('#LoginCust').hide();
+			$('#searchSubmit').click(function() {
+			  $('#PickCity').hide();
+			});
+			/* $('#loginPopUp').click(function() {
+			  $('#LoginCust').show();
+			});
+			$('#loginPopUpClose').click(function() {
+			  $('#LoginCust').hide();
+			});
+			$('#loginSubmit').click(function() {
+			  $('#LoginCust').hide();
+			});
+			$('#userId').blur(function() {
+			  $(this).addClass('error');
+			});
+			$('#userId').focus(function() {
+			  $(this).removeClass('error');
+			});
+			$('#pwd').blur(function() {
+			  $(this).addClass('error');
+			});
+			$('#pwd').focus(function() {
+			  $(this).removeClass('error');
+			}); */
+		});
+		
+	</script>
+</body>
+</html>
