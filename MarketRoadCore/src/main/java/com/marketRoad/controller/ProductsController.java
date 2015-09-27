@@ -40,6 +40,7 @@ public class ProductsController {
 		return categoryList;
 	}
 	
+	//Display products as per filters applied. Should actually be a post call.
 	@RequestMapping(value = "/getProductsByFilter", method=RequestMethod.GET, headers="Accept=application/json")
 	public ArrayList<CategorizationVO> getProductsByFilter() throws Exception {
 		return new ArrayList<CategorizationVO>();
