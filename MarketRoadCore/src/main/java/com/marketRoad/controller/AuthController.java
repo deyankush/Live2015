@@ -89,7 +89,7 @@ public class AuthController {
 				return custProfVO;
 			}
 		}catch (Exception e){
-			custProfVO.setStatus(new Status(0,"Customer doesn't exist"));
+			custProfVO.setStatus(new Status(0,"Something went wrong. We will look into it."));
 			return custProfVO;
 		}
 	}
